@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+  <title>Sha Hash Face Search</title>
   <!-- Required meta tags -->
   <link rel="stylesheet" href="style.css">
   <meta charset="utf-8">
@@ -20,41 +21,33 @@
           <h1>Github Face Search</h1>
           <hr />
         </div>
+        <div id="commits">
+        </div>
 
 
-        <form class="search-form">
+        <form class="face-form">
           <h3>Search for a face</h3>
 
           <div class="form-group">
-            <input type="text" id="search-query" class="form-control" placeholder="Sha Hash">
+            <input type="text" id="sha" class="form-control" placeholder="Sha Hash">
             </input>
           </div>
 
           <button type="button" class="btn btn-primary search">Search</button>
-
-          </button>
-
-
-          </button>
         </form>
-
         <hr />
-        <div class="faces row">
-        </div>
       </div>
     </div>
   </div>
 
 
 
-  <script id="face-template" type="text/x-handlebars-template">
-      <div class="face col-md-6">
-        <span class="border border-secondary">
-        <h4>Login:  {{ login }}</h4>
-        <img src="{{avatar_url}}" alt="">
-      </span>
-      </div>
-    </script>
+  <script id="contributor-template" type="text/x-handlebars-template">
+    <div class="contributor">
+      <h5>Login:  {{ login }}</h5>
+      <img src="{{ img }}">
+    </div>
+  </script>
 
 
   <!-- jQuery first, then Tether, then Bootstrap JS. -->

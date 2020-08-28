@@ -1,3 +1,14 @@
+.contributor img {
+  max-width: 150px;
+}
+
+.contributor {
+  border: 1px solid black;
+  display: inline-block;
+  padding: 10px;
+  margin: 10px;
+}
+
 .page-header {
   margin-top: 40px;
 }
